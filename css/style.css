@@ -8,20 +8,63 @@ body {
   }
 * {
     box-sizing: border-box;
-}
-#container{
-    display:grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    height: 100%;
-}
-#title-bar{
-    grid-row: 3/4;
-}
-#input{
-    grid-row:4/5;
+    --main-green: rgb(105, 197, 105);
 }
 h3{
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    background-color: var(--main-green);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 10px 10px;
+}
+ul{
+    list-style: none;
+    padding-left: ;
+    color:rgb(249, 114, 65)
+}
+i{
+    margin-right: 10px;
+}
+#container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 25% 0 25%;
+    height: 100%;
+}
+#title-bar{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    /* background-color:aquamarine; */
+}
+#input{
+    display: flex;
+    flex-direction: row;
+    /* padding-inline: 25px; */
+    justify-content: space-between;
+    
+    /* background-color: blueviolet; */
+}
+#add-btn{
+    background-color:white;
+    border: 2px solid var(--main-green);
+    border-radius: 5px;
+    color: var(--main-green);
+    padding:  5px;
+}
+#input-area{
+    border: 2px solid var(--main-green);
+    padding: 8px 70px;
+    border-radius: 5px;
+}
+#skills-list{
+    margin-bottom: 5px;
+    border-radius: 10px;
 }
