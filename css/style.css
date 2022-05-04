@@ -11,12 +11,17 @@ body {
 }
 #container{
     display:grid;
-    grid-template-areas:
-    ". . . . ."
-    ". . a . ."
-    ". . b . ."
-    ". . c . ."
-    ". . d . .";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
     height: 100%;
 }
-#
+#title-bar{
+    grid-row: 3/4;
+}
+#input{
+    grid-row:4/5;
+}
+h3{
+    display: flex;
+    flex-direction: column;
+}
