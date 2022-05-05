@@ -2,12 +2,17 @@ $("button").click(function () {
     let $input = $("#input-area").val()
     let $list = $("#list");
     let newListItem = document.createElement('li');
-    newListItem.innerHTML = `<i class="fa-solid fa-circle-xmark"></i> ${$input}`;
+    newListItem.innerHTML = `</a><i class="fa-solid fa-circle-xmark fa-lg"></i> ${$input}`;
     $list.append(newListItem);
 })
 
-$("i").click(function (e) {
-    let target = e.target;
-    target.parentElement.remove();
+let list = document.getElementById('skills-list');
 
+list.addEventListener('click', (e) => {
+    let target = e.target;
+    if (target.tagName === "I") {
+        target.parentElement.remove();
+    }
 })
+
+
