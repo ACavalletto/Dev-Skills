@@ -5,24 +5,27 @@ html,body {
 body {
     height: 100vh;
     width: 100vw;
+    font-family: 'Koulen', cursive;
   }
 * {
     box-sizing: border-box;
     --main-green: rgb(105, 197, 105);
+    --main-orange: rgb(249, 114, 65);
 }
 h3{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     background-color: var(--main-green);
+    font-size: 35px;
     color: white;
     border: 1px solid white;
     border-radius: 10px;
-    padding: 10px 10px 10px;
+    padding: 0 5px;
 }
 ul{
     list-style: none;
-    color:rgb(249, 114, 65)
+    color:var(--main-orange);
 }
 li{
     padding-top: 15px;
@@ -33,7 +36,6 @@ i{
 }
 i:hover{
     cursor: pointer;
-   
 }
 #container{
     display:flex;
@@ -49,15 +51,11 @@ i:hover{
     flex-direction: column;
     justify-content: flex-end;
     margin-bottom: 0;
-    /* background-color:aquamarine; */
 }
 #input{
     display: flex;
     flex-direction: row;
-    /* padding-inline: 25px; */
-    padding-left: 100px
-    
-    /* background-color: blueviolet; */
+    justify-content:space-between;
 }
 #add-btn{
     background-color:white;
@@ -72,13 +70,25 @@ i:hover{
 #add-btn:hover{
     background-color: var(--main-green);
     color: white;
-    border: 2px solid white;
-
+    border: rgb(60, 116, 60)
+    border-radius: 15px;
+    box-shadow:1px 1px 2px rgb(71, 138, 71), 0 0 25px var(--main-green), 0 0 5px var(--main-green);
 }
 #input-area{
     border: 2px solid var(--main-green);
     padding: 8px 70px;
     border-radius: 5px;
+    font-size: 20px;
+    color: var(--main-green);
+    transition: background-color 1s;
+    transition-timing-function: ease;
+}
+#input-area:focus{
+    background-color: var(--main-green);
+    border: 2px solid white;
+    outline-color: var(--main-orange);
+    border-radius: 10px;
+    color: white;
 }
 #skills-list{
     margin-bottom: 5px;
