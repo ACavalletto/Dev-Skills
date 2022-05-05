@@ -22,11 +22,17 @@ h3{
 }
 ul{
     list-style: none;
-    padding-left: ;
     color:rgb(249, 114, 65)
+}
+li{
+    padding-top: 15px;
 }
 i{
     margin-right: 10px;
+}
+i:hover{
+    cursor: pointer;
+   
 }
 #container{
     display:flex;
@@ -48,7 +54,7 @@ i{
     display: flex;
     flex-direction: row;
     /* padding-inline: 25px; */
-    justify-content: space-between;
+    padding-left: 100px
     
     /* background-color: blueviolet; */
 }
@@ -57,7 +63,16 @@ i{
     border: 2px solid var(--main-green);
     border-radius: 5px;
     color: var(--main-green);
-    padding:  5px;
+    padding:  5px 10px;
+    margin-left: 20px;
+    transition: background-color 2s;
+    transition-timing-function: ease;
+}
+#add-btn:hover{
+    background-color: var(--main-green);
+    color: white;
+    border: 2px solid white;
+
 }
 #input-area{
     border: 2px solid var(--main-green);
