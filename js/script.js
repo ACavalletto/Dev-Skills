@@ -1,18 +1,34 @@
 $("button").click(function () {
+
   let $input = $("#input-area").val();
   if ($input !== "") {
+    let $newListItem = $(`<li><i class ="fa-solid fa-circle-xmark fa-lg"></i> ${$input} </li>`)
     let $list = $("#list");
-    let newListItem = document.createElement("li");
-    newListItem.innerHTML = `</a><i class="fa-solid fa-circle-xmark fa-lg"></i> ${$input}`;
-    $list.append(newListItem);
+    $list.append($newListItem);
   }
 });
 
-let list = document.getElementById("skills-list");
+let $list = $("#list");
 
-list.addEventListener("click", (e) => {
-  let target = e.target;
-  if (target.tagName === "I") {
-    target.parentElement.remove();
-  }
+$list.on("click", "i", function () {
+  $(this)
+    .closest("li")
+    .fadeOut(1000, function () {
+      $(this.remove());
+    });
 });
+
+
+
+// original JS code for functionality;
+ // let newListItem = document.createElement("li");
+// newListItem.innerHTML = `<i class="fa-solid fa-circle-xmark fa-lg"></i> ${$input}`;
+
+// let list = document.getElementById("skills-list");
+
+// list.addEventListener("click", (e) => {
+//   let target = e.target;
+//   if (target.tagName === "I") {
+//     target.parentElement.remove();
+//   }
+// });
