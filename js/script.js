@@ -1,10 +1,18 @@
-$("button").click(function () {
+function randomizer() {
+  let randomColor = Math.floor(Math.random() * 16777215).toString(16);
+  let hashNumber = "#" + randomColor.toString();
+  return hashNumber;
+}
 
+$("button").click(function () {
   let $input = $("#input-area").val();
   if ($input !== "") {
-    let $newListItem = $(`<li><i class ="fa-solid fa-circle-xmark fa-lg"></i> ${$input} </li>`)
+    let $newListItem = $(
+      `<li><i class ="fa-solid fa-circle-xmark fa-lg"></i> ${$input} </li>`
+    );
+    $newListItem.css("color", randomizer());
     let $list = $("#list");
-    $list.append($newListItem);
+    $list.append($newListItem)
   }
 });
 
@@ -18,10 +26,8 @@ $list.on("click", "i", function () {
     });
 });
 
-
-
 // original JS code for functionality;
- // let newListItem = document.createElement("li");
+// let newListItem = document.createElement("li");
 // newListItem.innerHTML = `<i class="fa-solid fa-circle-xmark fa-lg"></i> ${$input}`;
 
 // let list = document.getElementById("skills-list");

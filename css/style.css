@@ -12,8 +12,19 @@ body {
     --main-green: rgb(105, 197, 105);
     --main-orange: rgb(249, 114, 65);
 }
+#container{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 25% 0 25%;
+    height: 100vh;
+    
+}
 h3{
     background-color: var(--main-green);
+    height: 4rem;
     font-size: 35px;
     color: white;
     border: 1px solid white;
@@ -24,7 +35,6 @@ h3{
 }
 ul{
     list-style: none;
-    color:var(--main-orange);
 }
 li{
     padding-top: 15px;
@@ -35,14 +45,6 @@ i{
 }
 i:hover{
     cursor: pointer;
-}
-#container{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin: 0 25% 0 25%;
-    height: 100%;
 }
 #input{
     display: flex;
