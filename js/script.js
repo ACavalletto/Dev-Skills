@@ -26,15 +26,13 @@ $list.on("click", "i", function () {
     });
 });
 
-// original JS code for functionality;
-// let newListItem = document.createElement("li");
-// newListItem.innerHTML = `<i class="fa-solid fa-circle-xmark fa-lg"></i> ${$input}`;
-
-// let list = document.getElementById("skills-list");
-
-// list.addEventListener("click", (e) => {
-//   let target = e.target;
-//   if (target.tagName === "I") {
-//     target.parentElement.remove();
-//   }
-// });
+// let $clear = $("h3");
+// if ($list.has("li")) {
+//   $clear.on("click", function () {
+//       $list
+//         .fadeOut(1000, function () {
+//           $list.empty();
+//           return;
+//         })
+//     })
+// }

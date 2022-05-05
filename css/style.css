@@ -23,6 +23,9 @@ body {
     
 }
 h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: var(--main-green);
     height: 4rem;
     font-size: 35px;
@@ -32,6 +35,9 @@ h3{
     padding: 0 5px;
     margin-bottom: 0;
     text-align: center;
+}
+h3 i{
+    margin-top: .35em;
 }
 ul{
     list-style: none;
