@@ -3,6 +3,9 @@ html,body {
   padding: 0;
 }
 body {
+    background-image: url('https://picjumbo.com/wp-content/uploads/black-and-white-morning-foggy-forest.jpg');
+    background-size: cover;
+    background-color: #cccccc;
     height: 100vh;
     width: 100vw;
     font-family: 'Koulen', cursive;
@@ -30,7 +33,6 @@ h3{
     height: 4rem;
     font-size: 35px;
     color: white;
-    border: 1px solid white;
     border-radius: 10px;
     padding: 0 5px;
     margin-bottom: 0;
@@ -38,12 +40,12 @@ h3{
 }
 h3 i{
     margin-top: .35em;
-    color: var(--main-orange)
 }
 ul{
     list-style: none;
 }
 li{
+    color: rgb(68, 32, 46);
     padding-top: 15px;
     font-size: 25px;
 }
