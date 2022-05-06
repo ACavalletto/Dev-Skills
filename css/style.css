@@ -38,6 +38,7 @@ h3{
 }
 h3 i{
     margin-top: .35em;
+    color: var(--main-orange)
 }
 ul{
     list-style: none;
